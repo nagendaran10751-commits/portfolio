@@ -1,643 +1,856 @@
+
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#08090d">
 
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="G. Nagendaran - B.Tech Information Technology Student, Developer and Digital Creator.">
 
-    <meta name="description"
-          content="G. Nagendaran - B.Tech IT Student Portfolio">
+  <title>G. Nagendaran | The Digital Architect</title>
 
-    <title>G. Nagendaran | B.Tech IT Student</title>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-    <link rel="preconnect"
-          href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800;900&family=DM+Mono:wght@400;500&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
-    <link rel="preconnect"
-          href="https://fonts.gstatic.com"
-          crossorigin>
-
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap"
-          rel="stylesheet">
-
-    <link rel="stylesheet" href="style.css">
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <!-- =========================
-         BACKGROUND
-         ========================= -->
+<!-- CURSOR EFFECTS -->
+<div class="cursor-dot"></div>
+<div class="cursor-ring"></div>
+<div class="cursor-glow"></div>
 
-    <div class="background">
+<!-- BACKGROUND -->
+<div class="background-grid"></div>
+<div class="glow glow-one"></div>
+<div class="glow glow-two"></div>
 
-        <div class="grid"></div>
+<!-- NAVIGATION -->
+<header class="navbar">
 
-        <div class="orb orb-1"></div>
-        <div class="orb orb-2"></div>
-        <div class="orb orb-3"></div>
+  <a href="#home" class="logo">GN<span>.</span></a>
+
+  <nav>
+    <a href="#about">ABOUT</a>
+    <a href="#skills">SKILLS</a>
+    <a href="#projects">PROJECTS</a>
+    <a href="#education">EDUCATION</a>
+    <a href="#contact">CONTACT</a>
+  </nav>
+
+  <a href="mailto:gnagendaran77@gmail.com" class="nav-contact">
+    LET'S TALK ↗
+  </a>
+
+</header>
+
+<main>
+
+<!-- =================================
+     HERO SECTION
+================================== -->
+
+<section class="hero section" id="home">
+
+  <div class="hero-top">
+    <span class="eyebrow">
+      <i></i> DIGITAL IDENTITY / 2026
+    </span>
+
+    <span class="mono">PORTFOLIO — 001</span>
+  </div>
+
+  <div class="hero-content">
+
+    <div class="hero-copy">
+
+      <p class="small-intro">
+        HELLO, I'M G. NAGENDARAN
+      </p>
+
+      <h1>NAGENDARAN<span class="red-dot">.</span></h1>
+
+      <div class="hero-subtitle">
+        <span class="line"></span>
+
+        <h2>
+          THE DIGITAL<br>
+          <span>ARCHITECT</span>
+        </h2>
+      </div>
+
+      <p class="hero-description">
+        B.Tech Information Technology student.
+        Building ideas, exploring technology and turning
+        creative concepts into digital experiences.
+      </p>
+
+      <div class="hero-buttons">
+        <a href="#projects" class="button-primary">
+          EXPLORE MY WORK ↗
+        </a>
+
+        <a href="#about" class="button-secondary">
+          DISCOVER MORE ↓
+        </a>
+      </div>
+
+      <div class="hero-social">
+        <span>FOLLOW MY JOURNEY</span>
+
+        <a href="https://github.com/nagendaran10751-commits/nagendar"
+           target="_blank" rel="noopener">
+          GITHUB ↗
+        </a>
+      </div>
 
     </div>
 
+    <!-- PROFILE PHOTO -->
 
-    <!-- =========================
-         NAVBAR
-         ========================= -->
+    <div class="portrait-area">
 
-    <header class="navbar">
+      <div class="portrait-frame">
 
-        <div class="nav-container">
+        <div class="portrait-label top-label">
+          IDENTITY / 001
+        </div>
 
-            <a href="#home" class="logo">
-                G<span>.</span>N
-            </a>
+        <img
+          src="./profile.jpg"
+          alt="Portrait of G. Nagendaran"
+          onerror="this.style.display='none'; this.parentElement.classList.add('image-missing')"
+        >
 
-            <nav class="nav-links">
+        <div class="portrait-overlay"></div>
 
-                <a href="#home">Home</a>
+        <div class="portrait-name">
+          GN<span>_</span>
+        </div>
 
-                <a href="#about">About</a>
+        <div class="portrait-label bottom-label">
+          CREATIVE MIND // TECH FUTURE
+        </div>
 
-                <a href="#skills">Skills</a>
+      </div>
 
-                <a href="#education">Education</a>
+      <div class="orbit orbit-one"></div>
+      <div class="orbit orbit-two"></div>
 
-                <a href="#contact">Contact</a>
+      <div class="floating-tag tag-one">
+        IT STUDENT
+      </div>
 
-            </nav>
+      <div class="floating-tag tag-two">
+        BUILD / LEARN / CREATE
+      </div>
 
-            <a href="#contact" class="nav-button">
-                Let's Connect
-            </a>
+    </div>
+
+  </div>
+
+  <div class="hero-footer">
+    <span>BASED IN KARAIKUDI, INDIA</span>
+    <span>SCROLL TO EXPLORE ↓</span>
+    <span>DESIGNED TO BE DIFFERENT.</span>
+  </div>
+
+</section>
+
+
+<!-- =================================
+     ABOUT SECTION
+================================== -->
+
+<section class="section about-section" id="about">
+
+  <div class="section-heading">
+    <span class="section-number">01 / ABOUT</span>
+    <span class="section-line"></span>
+    <span class="mono">THE PERSON BEHIND THE SCREEN</span>
+  </div>
+
+  <div class="about-grid">
+
+    <div>
+      <p class="giant-word">
+        WHO<br>AM I<span>?</span>
+      </p>
+    </div>
+
+    <div class="about-content">
+
+      <span class="accent-label">
+        A STUDENT. A BUILDER. A LEARNER.
+      </span>
+
+      <h2>
+        Curiosity is where<br>
+        everything <span>begins.</span>
+      </h2>
+
+      <p>
+        I'm G. Nagendaran, a B.Tech Information Technology
+        student at Mount Zion College of Engineering and
+        Technology, Karaikudi, Tamil Nadu.
+      </p>
+
+      <p>
+        I enjoy learning programming, exploring new
+        technologies and creating websites and software
+        projects. My goal is to continuously improve my
+        technical skills and transform what I learn into
+        practical digital solutions.
+      </p>
+
+      <div class="about-stats">
+
+        <div>
+          <strong>01</strong>
+          <span>CURIOUS MIND</span>
+        </div>
+
+        <div>
+          <strong>02</strong>
+          <span>TECH EXPLORER</span>
+        </div>
+
+        <div>
+          <strong>03</strong>
+          <span>ALWAYS LEARNING</span>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- =================================
+     SKILLS SECTION
+================================== -->
+
+<section class="section skills-section" id="skills">
+
+  <div class="section-heading">
+    <span class="section-number">02 / SKILLS</span>
+    <span class="section-line"></span>
+    <span class="mono">MY TECHNICAL UNIVERSE</span>
+  </div>
+
+  <h2 class="section-title">
+    TOOLS OF <span>CREATION.</span>
+  </h2>
+
+  <div class="skill-grid">
+
+    <article class="skill-card">
+
+      <span class="card-index">01</span>
+
+      <div class="skill-symbol">&lt;/&gt;</div>
+
+      <h3>PROGRAMMING</h3>
+
+      <p>C · C++ · Java · Python</p>
+
+      <span class="card-bottom">
+        LOGIC / DEVELOPMENT
+      </span>
+
+    </article>
+
+    <article class="skill-card">
+
+      <span class="card-index">02</span>
+
+      <div class="skill-symbol">▧</div>
+
+      <h3>WEB DEVELOPMENT</h3>
+
+      <p>HTML · CSS</p>
+
+      <span class="card-bottom">
+        DESIGN / STRUCTURE
+      </span>
+
+    </article>
+
+    <article class="skill-card">
+
+      <span class="card-index">03</span>
+
+      <div class="skill-symbol">⌘</div>
+
+      <h3>TOOLS</h3>
+
+      <p>VS Code · GitHub</p>
+
+      <span class="card-bottom">
+        BUILD / COLLABORATE
+      </span>
+
+    </article>
+
+    <article class="skill-card">
+
+      <span class="card-index">04</span>
+
+      <div class="skill-symbol">✳</div>
+
+      <h3>GROWTH</h3>
+
+      <p>Problem Solving · Learning</p>
+
+      <span class="card-bottom">
+        EXPLORE / IMPROVE
+      </span>
+
+    </article>
+
+  </div>
+
+</section>
+
+
+<!-- =================================
+     PROJECTS SECTION
+================================== -->
+
+<section class="section projects-section" id="projects">
+
+  <div class="section-heading">
+    <span class="section-number">03 / PROJECTS</span>
+    <span class="section-line"></span>
+    <span class="mono">SELECTED EXPERIMENTS</span>
+  </div>
+
+  <h2 class="section-title">
+    IDEAS INTO <span>REALITY.</span>
+  </h2>
+
+  <div class="project-list">
+
+    <!-- FEATURED PROJECT -->
+
+    <article class="project-card featured">
+
+      <div class="project-meta">
+        <span>PROJECT / 001</span>
+        <span>WEB APPLICATION</span>
+      </div>
+
+      <div class="project-body">
+
+        <div>
+
+          <span class="project-category">
+            BANKING SYSTEM
+          </span>
+
+          <h3>VIJIBANK<span>.</span></h3>
+
+          <p>
+            A banking management project focused on
+            essential banking operations and a simple
+            digital user experience.
+          </p>
+
+          <div class="tech-tags">
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>JAVA</span>
+            <span>SERVLETS</span>
+          </div>
 
         </div>
 
-    </header>
-
-
-    <!-- =========================
-         HERO SECTION
-         ========================= -->
-
-    <main>
-
-        <section id="home" class="hero">
-
-            <div class="hero-container">
-
-                <!-- LEFT SIDE -->
-
-                <div class="hero-content">
-
-                    <div class="availability">
-
-                        <span class="availability-dot"></span>
-
-                        AVAILABLE TO LEARN & BUILD
-
-                    </div>
-
-
-                    <p class="hero-eyebrow">
-                        B.TECH INFORMATION TECHNOLOGY
-                    </p>
-
-
-                    <h1>
-                        G. Nagendaran
-                        <span>.</span>
-                    </h1>
-
-
-                    <h2>
-                        Student · Developer · Curious Learner
-                    </h2>
-
-
-                    <p class="hero-description">
-
-                        I'm a B.Tech IT student passionate about
-                        programming, computers and creative digital work.
-                        I enjoy learning new technologies and transforming
-                        ideas into practical solutions.
-
-                    </p>
-
-
-                    <!-- HERO BUTTONS -->
-
-                    <div class="hero-buttons">
-
-                        <a href="#skills" class="btn btn-primary">
-                            Explore Skills
-                            <span>→</span>
-                        </a>
-
-                        <a href="#contact" class="btn btn-secondary">
-                            Contact Me
-                        </a>
-
-                    </div>
-
-                </div>
-
-
-                <!-- RIGHT SIDE - PHOTO -->
-
-                <div class="hero-right">
-
-                    <div class="profile-photo-card">
-
-                        <div class="profile-glow"></div>
-
-                        <img src="profile.png"
-                             alt="G. Nagendaran"
-                             class="profile-photo">
-
-                        <div class="profile-label">
-
-                            <span class="status-dot"></span>
-
-                            B.Tech IT Student
-
-                        </div>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <!-- =========================
-             ABOUT SECTION
-             ========================= -->
-
-        <section id="about" class="section">
-
-            <div class="section-container">
-
-                <div class="section-heading">
-
-                    <p class="section-label">
-                        ABOUT ME
-                    </p>
-
-                    <h2>
-                        A little about me<span>.</span>
-                    </h2>
-
-                </div>
-
-
-                <div class="about-grid">
-
-                    <div class="glass-card about-main">
-
-                        <p class="about-highlight">
-
-                            I'm G. Nagendaran, a B.Tech Information
-                            Technology student interested in programming,
-                            computers and modern technology.
-
-                        </p>
-
-                        <p>
-
-                            I enjoy exploring different programming
-                            languages, experimenting with ideas and
-                            continuously improving my technical knowledge.
-
-                        </p>
-
-                    </div>
-
-
-                    <div class="about-side">
-
-                        <div class="glass-card mini-card">
-
-                            <div class="mini-icon">
-                                &lt;/&gt;
-                            </div>
-
-                            <div>
-
-                                <h3>
-                                    Developer
-                                </h3>
-
-                                <p>
-                                    Building knowledge through coding,
-                                    practice and projects.
-                                </p>
-
-                            </div>
-
-                        </div>
-
-
-                        <div class="glass-card mini-card">
-
-                            <div class="mini-icon">
-                                ✦
-                            </div>
-
-                            <div>
-
-                                <h3>
-                                    Tech Explorer
-                                </h3>
-
-                                <p>
-                                    Curious about technology and always
-                                    ready to learn something new.
-                                </p>
-
-                            </div>
-
-                        </div>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <!-- =========================
-             SKILLS SECTION
-             ========================= -->
-
-        <section id="skills" class="section">
-
-            <div class="section-container">
-
-                <div class="section-heading">
-
-                    <p class="section-label">
-                        MY SKILLS
-                    </p>
-
-                    <h2>
-                        Technologies I work with<span>.</span>
-                    </h2>
-
-                </div>
-
-
-                <div class="skills-grid">
-
-
-                    <!-- WEB DEVELOPMENT -->
-
-                    <div class="glass-card skill-card">
-
-                        <div class="skill-number">
-                            01
-                        </div>
-
-                        <h3>
-                            Web Development
-                        </h3>
-
-                        <p>
-                            Creating clean and responsive web pages
-                            using modern frontend technologies.
-                        </p>
-
-                        <div class="skill-tags">
-
-                            <span>HTML</span>
-                            <span>CSS</span>
-
-                        </div>
-
-                    </div>
-
-
-                    <!-- PROGRAMMING -->
-
-                    <div class="glass-card skill-card">
-
-                        <div class="skill-number">
-                            02
-                        </div>
-
-                        <h3>
-                            Programming
-                        </h3>
-
-                        <p>
-                            Learning programming fundamentals and
-                            developing logical problem-solving skills.
-                        </p>
-
-                        <div class="skill-tags">
-
-                            <span>Python</span>
-                            <span>C</span>
-                            <span>C++</span>
-
-                        </div>
-
-                    </div>
-
-
-                    <!-- TOOLS -->
-
-                    <div class="glass-card skill-card">
-
-                        <div class="skill-number">
-                            03
-                        </div>
-
-                        <h3>
-                            Developer Tools
-                        </h3>
-
-                        <p>
-                            Using modern development tools to write,
-                            manage and improve projects.
-                        </p>
-
-                        <div class="skill-tags">
-
-                            <span>VS Code</span>
-                            <span>Git</span>
-                            <span>GitHub</span>
-
-                        </div>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <!-- =========================
-             TECHNOLOGY STRIP
-             ========================= -->
-
-        <section class="technology-strip">
-
-            <div class="technology-track">
-
-                <span>HTML</span>
-                <i>•</i>
-
-                <span>CSS</span>
-                <i>•</i>
-
-                <span>PYTHON</span>
-                <i>•</i>
-
-                <span>C</span>
-                <i>•</i>
-
-                <span>C++</span>
-                <i>•</i>
-
-                <span>GITHUB</span>
-
-            </div>
-
-        </section>
-
-
-        <!-- =========================
-             EDUCATION SECTION
-             ========================= -->
-
-        <section id="education" class="section">
-
-            <div class="section-container">
-
-                <div class="section-heading">
-
-                    <p class="section-label">
-                        EDUCATION
-                    </p>
-
-                    <h2>
-                        My academic journey<span>.</span>
-                    </h2>
-
-                </div>
-
-
-                <div class="education-card glass-card">
-
-                    <div class="education-year">
-
-                        2026 — 2030
-
-                    </div>
-
-
-                    <div class="education-content">
-
-                        <p class="education-label">
-                            BACHELOR'S DEGREE
-                        </p>
-
-                        <h3>
-                            B.Tech Information Technology
-                        </h3>
-
-                        <h4>
-                            Mount Zion College for Engineering
-                            and Technology
-                        </h4>
-
-                        <p>
-
-                            Currently pursuing my B.Tech in Information
-                            Technology and building a strong foundation
-                            in programming, web technologies and
-                            computer science.
-
-                        </p>
-
-                    </div>
-
-
-                    <div class="education-status">
-
-                        <span></span>
-
-                        STUDENT
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <!-- =========================
-             CONTACT SECTION
-             ========================= -->
-
-        <section id="contact" class="section contact-section">
-
-            <div class="section-container">
-
-                <div class="contact-card glass-card">
-
-                    <div class="contact-content">
-
-                        <p class="section-label">
-                            CONTACT
-                        </p>
-
-                        <h2>
-                            Let's build something
-                            <span>interesting.</span>
-                        </h2>
-
-                        <p>
-
-                            I'm always interested in learning,
-                            building projects and connecting with
-                            people who share an interest in technology.
-
-                        </p>
-
-                    </div>
-
-
-                    <div class="contact-links">
-
-
-                        <!-- EMAIL -->
-
-                        <a href="mailto:nagendaran10751@mountzion.ac.in"
-                           class="contact-item">
-
-                            <div class="contact-icon">
-                                @
-                            </div>
-
-                            <div>
-
-                                <small>
-                                    EMAIL
-                                </small>
-
-                                <strong>
-                                    nagendaran10751@mountzion.ac.in
-                                </strong>
-
-                            </div>
-
-                        </a>
-
-
-                        <!-- GITHUB -->
-
-                        <a href="https://github.com/nagendaran10751-commits/nagendaran"
-                           target="_blank"
-                           rel="noopener noreferrer"
-                           class="contact-item">
-
-                            <div class="contact-icon">
-                                GH
-                            </div>
-
-                            <div>
-
-                                <small>
-                                    GITHUB
-                                </small>
-
-                                <strong>
-                                    nagendaran10751-commits
-                                </strong>
-
-                            </div>
-
-                        </a>
-
-
-                        <!-- PHONE -->
-
-                        <a href="tel:+917708961258"
-                           class="contact-item">
-
-                            <div class="contact-icon">
-                                ☎
-                            </div>
-
-                            <div>
-
-                                <small>
-                                    PHONE
-                                </small>
-
-                                <strong>
-                                    +91 77089 61258
-                                </strong>
-
-                            </div>
-
-                        </a>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </section>
-
-    </main>
-
-
-    <!-- =========================
-         FOOTER
-         ========================= -->
-
-    <footer>
-
-        <div class="footer-container">
-
-            <div class="footer-logo">
-
-                G<span>.</span>N
-
-            </div>
-
-
-            <p>
-
-                G. Nagendaran · B.Tech IT Student
-
-            </p>
-
-
-            <p class="copyright">
-
-                © 2026 G. Nagendaran. All rights reserved.
-
-            </p>
-
+        <div class="project-art bank-art">
+          <span>₹</span>
+          <i>SECURE<br>TRANSACTIONS</i>
         </div>
 
-    </footer>
+      </div>
 
+      <div class="project-bottom">
+        <span>01 — FEATURED PROJECT</span>
+        <span>FINTECH / DIGITAL</span>
+      </div>
+
+    </article>
+
+
+    <div class="project-row">
+
+      <!-- PROJECT TWO -->
+
+      <article class="project-card small-project">
+
+        <div class="project-meta">
+          <span>PROJECT / 002</span>
+          <span>DEVELOPMENT</span>
+        </div>
+
+        <div class="project-art code-art">
+          &lt; CODE /&gt;
+        </div>
+
+        <h3>
+          PROGRAMMING<br>PROJECTS
+        </h3>
+
+        <p>
+          Learning through coding experiments and
+          practical programming tasks.
+        </p>
+
+        <div class="tech-tags">
+          <span>C</span>
+          <span>C++</span>
+          <span>JAVA</span>
+        </div>
+
+      </article>
+
+
+      <!-- PROJECT THREE -->
+
+      <article class="project-card small-project">
+
+        <div class="project-meta">
+          <span>PROJECT / 003</span>
+          <span>CREATIVE</span>
+        </div>
+
+        <div class="project-art web-art">
+          WEB<span>_</span>
+        </div>
+
+        <h3>
+          WEBSITE<br>CREATION
+        </h3>
+
+        <p>
+          Designing responsive web experiences with
+          structure, style and creativity.
+        </p>
+
+        <div class="tech-tags">
+          <span>HTML</span>
+          <span>CSS</span>
+        </div>
+
+      </article>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- =================================
+     EDUCATION SECTION
+================================== -->
+
+<section class="section education-section" id="education">
+
+  <div class="section-heading">
+    <span class="section-number">04 / EDUCATION</span>
+    <span class="section-line"></span>
+    <span class="mono">THE LEARNING JOURNEY</span>
+  </div>
+
+  <div class="education-box">
+
+    <div class="education-year">
+      01 / CURRENT
+    </div>
+
+    <div>
+
+      <span class="accent-label">
+        UNDERGRADUATE EDUCATION
+      </span>
+
+      <h2>
+        B.TECH <span>INFORMATION TECHNOLOGY</span>
+      </h2>
+
+      <h3>
+        Mount Zion College of Engineering and Technology
+      </h3>
+
+      <p>
+        Karaikudi, Tamil Nadu, India
+      </p>
+
+    </div>
+
+    <div class="education-mark">
+      IT<span>.</span>
+    </div>
+
+  </div>
+
+
+  <div class="certificate-box">
+
+    <div>
+      <span class="accent-label">
+        05 / CERTIFICATES
+      </span>
+
+      <h2>KNOWLEDGE IN PROGRESS.</h2>
+    </div>
+
+    <p>
+      Certificates and achievements will be added here
+      as they are earned.
+    </p>
+
+  </div>
+
+</section>
+
+
+<!-- =================================
+     CONTACT SECTION
+================================== -->
+
+<section class="section contact-section" id="contact">
+
+  <div class="section-heading">
+    <span class="section-number">05 / CONTACT</span>
+    <span class="section-line"></span>
+    <span class="mono">OPEN A CONNECTION</span>
+  </div>
+
+  <div class="contact-main">
+
+    <span class="accent-label">
+      HAVE AN IDEA? LET'S CONNECT.
+    </span>
+
+    <h2>
+      LET'S BUILD<br>
+      <span>SOMETHING</span><br>
+      GREAT<span class="red-dot">.</span>
+    </h2>
+
+    <a class="button-primary"
+       href="mailto:gnagendaran77@gmail.com">
+      SEND ME AN EMAIL ↗
+    </a>
+
+  </div>
+
+
+  <div class="contact-details">
+
+    <div>
+      <span>EMAIL</span>
+      <a href="mailto:gnagendaran77@gmail.com">
+        gnagendaran77@gmail.com
+      </a>
+    </div>
+
+    <div>
+      <span>PHONE</span>
+      <a href="tel:+917708961258">
+        +91 7708961258
+      </a>
+    </div>
+
+    <div>
+      <span>LOCATION</span>
+      <p>Karaikudi, Tamil Nadu, India</p>
+    </div>
+
+    <div>
+  <span>GITHUB</span>
+
+  <a
+    href="https://github.com/nagendaran10751-commits/nagendaran"
+    target="_blank"
+    rel="noopener noreferrer">
+    VIEW MY GITHUB ↗
+  </a>
+</div>
+</section>
+
+</main>
+
+
+<!-- =================================
+     FOOTER
+================================== -->
+
+<footer>
+
+  <a href="#home" class="logo">
+    GN<span>.</span>
+  </a>
+
+  <p>
+    DESIGNED WITH CURIOSITY. BUILT WITH PURPOSE.
+  </p>
+
+  <span>
+    © 2026 G. NAGENDARAN
+  </span>
+
+</footer>
+
+
+<!-- =================================
+     INTERACTIVE JAVASCRIPT
+================================== -->
+
+<script>
+
+document.addEventListener("DOMContentLoaded", () => {
+
+  const dot = document.querySelector(".cursor-dot");
+  const ring = document.querySelector(".cursor-ring");
+  const glow = document.querySelector(".cursor-glow");
+
+  const desktopPointer = window.matchMedia(
+    "(hover: hover) and (pointer: fine)"
+  ).matches;
+
+  const reducedMotion = window.matchMedia(
+    "(prefers-reduced-motion: reduce)"
+  ).matches;
+
+
+  /* CUSTOM CURSOR */
+
+  if (desktopPointer && !reducedMotion && dot && ring && glow) {
+
+    let mouseX = window.innerWidth / 2;
+    let mouseY = window.innerHeight / 2;
+
+    let ringX = mouseX;
+    let ringY = mouseY;
+
+    document.addEventListener("mousemove", (e) => {
+
+      mouseX = e.clientX;
+      mouseY = e.clientY;
+
+      dot.style.left = mouseX + "px";
+      dot.style.top = mouseY + "px";
+
+      glow.style.left = mouseX + "px";
+      glow.style.top = mouseY + "px";
+
+    });
+
+    function animateCursor() {
+
+      ringX += (mouseX - ringX) * 0.15;
+      ringY += (mouseY - ringY) * 0.15;
+
+      ring.style.left = ringX + "px";
+      ring.style.top = ringY + "px";
+
+      requestAnimationFrame(animateCursor);
+
+    }
+
+    animateCursor();
+
+
+    document.querySelectorAll(
+      "a, button, .skill-card, .project-card"
+    ).forEach((element) => {
+
+      element.addEventListener("mouseenter", () => {
+        ring.classList.add("hover");
+      });
+
+      element.addEventListener("mouseleave", () => {
+        ring.classList.remove("hover");
+      });
+
+    });
+
+  }
+
+
+  /* 3D MOUSE TILT */
+
+  if (desktopPointer && !reducedMotion) {
+
+    document.querySelectorAll(
+      ".skill-card, .project-card"
+    ).forEach((card) => {
+
+      card.addEventListener("mousemove", (e) => {
+
+        const rect = card.getBoundingClientRect();
+
+        const x = e.clientX - rect.left;
+        const y = e.clientY - rect.top;
+
+        const rotateX = ((y / rect.height) - 0.5) * -10;
+        const rotateY = ((x / rect.width) - 0.5) * 10;
+
+        card.style.transform =
+          `perspective(900px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) translateY(-5px)`;
+
+        card.style.setProperty("--mouse-x", x + "px");
+        card.style.setProperty("--mouse-y", y + "px");
+
+      });
+
+      card.addEventListener("mouseleave", () => {
+        card.style.transform = "";
+      });
+
+    });
+
+  }
+
+
+  /* SCROLL REVEAL */
+
+  const revealElements = document.querySelectorAll(
+    ".section-heading, .about-grid, .section-title, " +
+    ".skill-card, .project-card, .education-box, " +
+    ".certificate-box, .contact-main, .contact-details"
+  );
+
+  if (reducedMotion || !("IntersectionObserver" in window)) {
+
+    revealElements.forEach((element) => {
+      element.classList.add("visible");
+    });
+
+  } else {
+
+    revealElements.forEach((element) => {
+      element.classList.add("reveal");
+    });
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+
+        entries.forEach((entry) => {
+
+          if (entry.isIntersecting) {
+
+            entry.target.classList.add("visible");
+            observer.unobserve(entry.target);
+
+          }
+
+        });
+
+      },
+      {
+        threshold: 0.12
+      }
+    );
+
+    revealElements.forEach((element) => {
+      observer.observe(element);
+    });
+
+  }
+
+
+  /* ACTIVE NAVIGATION */
+
+  const sections = document.querySelectorAll(
+    "main section[id]"
+  );
+
+  const navLinks = document.querySelectorAll(
+    ".navbar nav a"
+  );
+
+  if ("IntersectionObserver" in window) {
+
+    const navObserver = new IntersectionObserver(
+      (entries) => {
+
+        entries.forEach((entry) => {
+
+          if (entry.isIntersecting) {
+
+            navLinks.forEach((link) => {
+
+              link.classList.toggle(
+                "active",
+                link.getAttribute("href") ===
+                "#" + entry.target.id
+              );
+
+            });
+
+          }
+
+        });
+
+      },
+      {
+        threshold: 0.4
+      }
+    );
+
+    sections.forEach((section) => {
+      navObserver.observe(section);
+    });
+
+  }
+
+
+  /* PORTRAIT 3D MOVEMENT */
+
+  const portrait = document.querySelector(".portrait-frame");
+
+  if (desktopPointer && !reducedMotion && portrait) {
+
+    const portraitArea = document.querySelector(".portrait-area");
+
+    portraitArea.addEventListener("mousemove", (e) => {
+
+      const rect = portraitArea.getBoundingClientRect();
+
+      const x = (e.clientX - rect.left) / rect.width - 0.5;
+      const y = (e.clientY - rect.top) / rect.height - 0.5;
+
+      portrait.style.animationPlayState = "paused";
+
+      portrait.style.transform =
+        `rotateY(${x * 18}deg) rotateX(${y * -12}deg) translateY(-5px)`;
+
+    });
+
+    portraitArea.addEventListener("mouseleave", () => {
+
+      portrait.style.animationPlayState = "running";
+      portrait.style.transform = "";
+
+    });
+
+  }
+
+});
+
+</script>
 
 </body>
-
 </html>
