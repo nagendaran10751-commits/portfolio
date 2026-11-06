@@ -1646,3 +1646,360 @@ footer > span {
   }
 
 }
+
+/* =========================================
+   LIVE AI COLLABORATION SYSTEM
+========================================= */
+
+#agent-system {
+  --agent-panel: rgba(12, 15, 24, .94);
+  font-family: "DM Mono", monospace;
+}
+
+/* ACTIVE AGENT HUD */
+
+.agent-hud {
+  position: fixed;
+  top: 100px;
+  right: 22px;
+  z-index: 9998;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 13px 16px;
+  border: 1px solid rgba(255,255,255,.13);
+  background: var(--agent-panel);
+  backdrop-filter: blur(20px);
+  box-shadow: 0 12px 45px #0008;
+  animation: hud-entrance 1s ease both;
+}
+
+.agent-hud-heading {
+  display: none;
+}
+
+.live-indicator,
+.terminal-header i {
+  display: inline-block;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #65f5a1;
+  box-shadow: 0 0 12px #65f5a1;
+  animation: live-blink 1.5s infinite;
+}
+
+.agent-avatars {
+  display: flex;
+  padding-left: 5px;
+}
+
+.agent-avatars span {
+  width: 27px;
+  height: 27px;
+  display: grid;
+  place-items: center;
+  margin-left: -5px;
+  border-radius: 50%;
+  border: 2px solid #10121a;
+  background: var(--agent-color);
+  color: #08090d;
+  font-size: 10px;
+  font-weight: bold;
+}
+
+.agent-count {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.agent-count strong {
+  color: white;
+  font-size: 10px;
+}
+
+.agent-count small {
+  color: #7c8496;
+  font-size: 8px;
+}
+
+/* SIMULATED CURSORS */
+
+#agent-cursors {
+  position: fixed;
+  inset: 0;
+  z-index: 9997;
+  overflow: hidden;
+  pointer-events: none !important;
+}
+
+.agent-cursor {
+  position: absolute;
+  top: 0;
+  left: 0;
+  pointer-events: none !important;
+  will-change: transform;
+  transition: opacity .3s;
+}
+
+.agent-pointer {
+  width: 0;
+  height: 0;
+  border-left: 8px solid transparent;
+  border-right: 4px solid transparent;
+  border-top: 21px solid var(--cursor-color);
+  filter: drop-shadow(0 2px 5px #000);
+  transform: rotate(-35deg);
+}
+
+.agent-name {
+  position: absolute;
+  top: 14px;
+  left: 12px;
+  white-space: nowrap;
+  padding: 5px 9px;
+  background: var(--cursor-color);
+  color: #08090d;
+  font-size: 9px;
+  font-weight: bold;
+  letter-spacing: .3px;
+  box-shadow: 0 4px 15px #0005;
+}
+
+.agent-cursor.clicking .agent-pointer {
+  animation: cursor-click .35s ease;
+}
+
+.agent-cursor.clicking .agent-name {
+  box-shadow: 0 0 18px var(--cursor-color);
+}
+
+/* CLICK PULSE */
+
+.agent-click-pulse {
+  position: fixed;
+  z-index: 9996;
+  width: 35px;
+  height: 35px;
+  border: 2px solid var(--pulse-color);
+  border-radius: 50%;
+  pointer-events: none;
+  animation: click-pulse .7s ease-out forwards;
+}
+
+.agent-interaction {
+  animation: agent-element-pulse .65s ease;
+}
+
+/* AGENT TEXT HIGHLIGHT */
+
+::highlight(agent-highlight-frontend) {
+  background: rgba(255,77,109,.35);
+  color: white;
+}
+
+::highlight(agent-highlight-design) {
+  background: rgba(0,217,255,.35);
+  color: white;
+}
+
+::highlight(agent-highlight-review) {
+  background: rgba(163,255,114,.35);
+  color: white;
+}
+
+/* LIVE TERMINAL */
+
+.agent-terminal {
+  position: fixed;
+  bottom: 22px;
+  right: 22px;
+  z-index: 9998;
+  width: 310px;
+  padding: 14px;
+  background: var(--agent-panel);
+  border: 1px solid rgba(255,255,255,.13);
+  box-shadow: 0 15px 50px #0009;
+  backdrop-filter: blur(20px);
+  pointer-events: none;
+}
+
+.terminal-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 12px;
+  border-bottom: 1px solid rgba(255,255,255,.1);
+  color: #e5e7ef;
+  font-size: 9px;
+}
+
+.terminal-header span:first-child {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.terminal-live {
+  color: #65f5a1;
+  font-size: 8px;
+}
+
+#agent-logs {
+  height: 105px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: 8px;
+  padding-top: 10px;
+}
+
+#agent-logs p {
+  margin: 0;
+  font-size: 9px;
+  line-height: 1.5;
+  color: #a7b0c0;
+  animation: log-appear .35s ease both;
+}
+
+#agent-logs p span {
+  font-weight: bold;
+}
+
+/* MODE TOGGLE */
+
+#agent-toggle {
+  position: fixed;
+  bottom: 22px;
+  left: 22px;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  padding: 12px 15px;
+  background: var(--agent-panel);
+  color: #65f5a1;
+  border: 1px solid rgba(101,245,161,.35);
+  font: 9px "DM Mono", monospace;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: .3s;
+}
+
+#agent-toggle:hover {
+  border-color: #65f5a1;
+  box-shadow: 0 0 20px #65f5a122;
+  transform: translateY(-3px);
+}
+
+.toggle-dot {
+  width: 7px;
+  height: 7px;
+  background: #65f5a1;
+  border-radius: 50%;
+  box-shadow: 0 0 10px #65f5a1;
+}
+
+#agent-toggle.off {
+  color: #9295a0;
+  border-color: rgba(255,255,255,.15);
+}
+
+#agent-toggle.off .toggle-dot {
+  background: #777;
+  box-shadow: none;
+}
+
+/* ANIMATIONS */
+
+@keyframes live-blink {
+  50% { opacity: .35; }
+}
+
+@keyframes cursor-click {
+  50% { transform: rotate(-35deg) scale(.7); }
+}
+
+@keyframes click-pulse {
+  from {
+    opacity: 1;
+    transform: translate(-50%,-50%) scale(.3);
+  }
+  to {
+    opacity: 0;
+    transform: translate(-50%,-50%) scale(2.5);
+  }
+}
+
+@keyframes agent-element-pulse {
+  0%,100% { transform: scale(1); }
+  50% { transform: scale(1.025); }
+}
+
+@keyframes log-appear {
+  from { opacity: 0; transform: translateX(10px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes hud-entrance {
+  from { opacity: 0; transform: translateY(-15px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* MOBILE */
+
+@media(max-width:767px) {
+  .agent-hud {
+    top: 145px;
+    right: 10px;
+    padding: 9px;
+    gap: 7px;
+  }
+
+  .agent-avatars span {
+    width: 23px;
+    height: 23px;
+  }
+
+  .agent-count strong {
+    font-size: 8px;
+  }
+
+  .agent-count small {
+    font-size: 7px;
+  }
+
+  .agent-terminal {
+    width: min(260px, calc(100vw - 24px));
+    right: 12px;
+    bottom: 65px;
+    padding: 10px;
+  }
+
+  #agent-toggle {
+    left: 12px;
+    bottom: 12px;
+    padding: 10px;
+    font-size: 8px;
+  }
+}
+
+@media(max-width:380px) {
+  .agent-terminal {
+    width: 220px;
+  }
+}
+
+/* REDUCED MOTION */
+
+@media(prefers-reduced-motion:reduce) {
+  .agent-hud,
+  .agent-terminal,
+  .agent-cursor,
+  .agent-click-pulse {
+    animation: none !important;
+    transition: none !important;
+  }
+}
