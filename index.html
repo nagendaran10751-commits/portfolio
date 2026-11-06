@@ -852,5 +852,56 @@ document.addEventListener("DOMContentLoaded", () => {
 
 </script>
 
+<!-- LIVE AI COLLABORATION LAYER -->
+<div id="agent-system">
+
+  <!-- Active agents HUD -->
+  <div class="agent-hud">
+    <div class="agent-hud-heading">
+      <span class="live-indicator"></span>
+      LIVE WORKSPACE
+    </div>
+
+    <div class="agent-avatars">
+      <span style="--agent-color:#ff4d6d">F</span>
+      <span style="--agent-color:#00d9ff">D</span>
+      <span style="--agent-color:#b78cff">U</span>
+      <span style="--agent-color:#a3ff72">R</span>
+      <span style="--agent-color:#ffbd59">C</span>
+    </div>
+
+    <div class="agent-count">
+      <strong>4 AGENTS ACTIVE</strong>
+      <small>COLLABORATING LIVE</small>
+    </div>
+  </div>
+
+  <!-- Simulated cursor container -->
+  <div id="agent-cursors" aria-hidden="true"></div>
+
+  <!-- Live terminal -->
+  <div class="agent-terminal">
+    <div class="terminal-header">
+      <span><i></i> SYSTEM ACTIVITY</span>
+      <span class="terminal-live">LIVE</span>
+    </div>
+
+    <div id="agent-logs" aria-live="off">
+      <p>Initializing workspace...</p>
+    </div>
+  </div>
+
+  <!-- Agent mode toggle -->
+  <button id="agent-toggle" type="button"
+          aria-pressed="true">
+    <span class="toggle-dot"></span>
+    AGENT MODE: ON
+  </button>
+
+</div>
+
+<script src="agent-mode.js"></script>
+</body>
+</html>S
 </body>
 </html>
